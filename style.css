@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #413737;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora-container{
+    width: 400px;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.calculadora-display{
+    display: flex;
+    font-family: monospace;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 80px;
+    overflow-x: hidden;
+    background-color: #191212d1;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.calculadora-botones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.boton, .sumar, .restar, .multiplicar, .dividir, .punto, #resetear{
+    width: 100%;
+    height: 60px;
+    background-color: #98ce77;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton:hover{
+    background-color: #7fbf5a;
+}
+
+
+.igual{
+    display: grid;
+    grid-column: span 4;
+    background-color: #f9a825;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 60px;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.igual:hover{
+    background-color: #f57f17;
+}
+
+
+
+.parrafo{
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+span{
+    color: #f9a825;
+    font-weight: bold;
+}
